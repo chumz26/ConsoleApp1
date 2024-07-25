@@ -10,8 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello {0}!", args[0]);
+            Greet greet = new Greet();                
+            
+            greet.Hello();
+
+            greet.Hello(args[0].ToString());
 
         }
     }
