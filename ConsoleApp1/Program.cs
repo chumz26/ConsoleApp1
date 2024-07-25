@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Greet greet = new Greet();                
-            
+            Greet greet = new Greet();
+
+            Console.WriteLine(DateTime.Now.AddHours(-1));
+
             greet.Hello();
 
             greet.Hello(args[0].ToString());
